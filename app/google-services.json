@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "912411625673",
+    "firebase_url": "https://fastmessage-3e5a1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fastmessage-3e5a1",
+    "storage_bucket": "fastmessage-3e5a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912411625673:android:65186ca3ff2a9669d0e518",
+        "android_client_info": {
+          "package_name": "com.example.fastmessage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVUl0k3CSGjavp8lTRQxAvOeVa24lM5Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

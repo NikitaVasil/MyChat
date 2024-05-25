@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_dark_emerald">#116466</color>
+    <color name="primary_coral">#d9b08c</color>
+    <color name="primary_light_blue">#d1e8e2</color>
+    <color name="primary_hint">#C5C4C4</color>
+    <color name="primary_text_button">#2c3531</color>
+</resources>

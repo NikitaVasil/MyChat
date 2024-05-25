@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fast Message</string>
+    <string name="create_account">Создайте аккаунт</string>
+    <string name="enter_your_username">Введите логин</string>
+    <string name="enter_your_email">Введите email</string>
+    <string name="enter_your_password">Введите пароль</string>
+    <string name="authorize_account">Авторизация</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="to_send">to send</string>
+    <string name="users">Пользователи</string>
+    <string name="confirm_password">Повторите пароль</string>
+    <string name="new_to_here">Здесь впервые?    </string>
+</resources>
