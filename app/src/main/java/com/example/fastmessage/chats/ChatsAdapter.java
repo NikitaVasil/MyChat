@@ -1,5 +1,6 @@
 package com.example.fastmessage.chats;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.fastmessage.ChatActivity;
 import com.example.fastmessage.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -59,6 +61,12 @@ public class ChatsAdapter extends RecyclerView.Adapter<ChatViewHolder> {
                     Toast.makeText(holder.itemView.getContext(), "Не удалось получить ссылку на изображение профиля", Toast.LENGTH_SHORT).show();
                 }
             }
+        });
+
+        holder.itemView.setOnClickListener(view ->{
+            Intent intent = new Intent(holder.itemView.getContext(), ChatActivity.class);
+            intent.putExtra("chatId", chats.get(position).getChat_id());
+            holder.itemView.getContext().startActivity(intent);
         });
     }
 

@@ -7,4 +7,6 @@
     <color name="primary_light_blue">#d1e8e2</color>
     <color name="primary_hint">#C5C4C4</color>
     <color name="primary_text_button">#2c3531</color>
+    <color name="primary_message_recievedUser">#e9e9e9</color>
+    <color name="primary_message_your">#f0f8ff</color>
 </resources>

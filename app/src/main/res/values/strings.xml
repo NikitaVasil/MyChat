@@ -11,4 +11,5 @@
     <string name="users">Пользователи</string>
     <string name="confirm_password">Повторите пароль</string>
     <string name="new_to_here">Здесь впервые?    </string>
+    <string name="type_your_message">Введите сообщение...</string>
 </resources>
