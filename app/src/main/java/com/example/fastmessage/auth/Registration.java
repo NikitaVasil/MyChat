@@ -24,12 +24,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Registration extends AppCompatActivity {
 
     private ActivityRegistrationBinding binding;
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference ref = database.getReference("database");
+    final DatabaseReference ref = database.getReference("database");
 
 
     @Override
@@ -56,8 +57,9 @@ public class Registration extends AppCompatActivity {
                                 Map<String, String> userInfo = new HashMap<>();
                                 userInfo.put("email", binding.editMail.getText().toString());
                                 userInfo.put("username", binding.editLogin.getText().toString());
+                                userInfo.put("profileImage", "");
 
-                                usersRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userInfo);
+                                usersRef.child(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid()).setValue(userInfo);
                                 startActivity(new Intent(Registration.this, MainActivity.class));
                             } else {
                                 Toast.makeText(getApplicationContext(), "Ошибка в регистрации!", Toast.LENGTH_SHORT).show();
@@ -66,6 +68,13 @@ public class Registration extends AppCompatActivity {
                         }
                     });
                 }
+            }
+        });
+
+        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Registration.this, Authorization.class));
             }
         });
 
